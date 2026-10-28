@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Importadora Celeste: repuestos y autopartes para tu vehículo.">
+  <title>Importadora Celeste | Repuestos para vehículos</title>
+
+  <style>
+    :root {
+      --azul: #102d50;
+      --rojo: #e63946;
+      --claro: #f4f6f9;
+      --texto: #263238;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--texto);
+      line-height: 1.6;
+    }
+
+    a { text-decoration: none; }
+
+    .contenedor {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    header {
+      background: var(--azul);
+      color: white;
+      padding: 18px 0;
+    }
+
+    .navegacion {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: 800;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a { color: white; }
+
+    .hero {
+      background: linear-gradient(120deg, #102d50, #235783);
+      color: white;
+      text-align: center;
+      padding: 90px 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    .boton {
+      display: inline-block;
+      background: var(--rojo);
+      color: white;
+      padding: 13px 24px;
+      margin-top: 18px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+
+    .boton:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+
+    section { padding: 65px 0; }
+
+    .titulo {
+      text-align: center;
+      color: var(--azul);
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .nosotros {
+      text-align: center;
+      max-width: 760px;
+      margin: auto;
+    }
+
+    .categorias { background: var(--claro); }
+
+    .rejilla {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .tarjeta {
+      background: white;
+      padding: 28px 20px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 18px #102d5010;
+    }
+
+    .tarjeta .icono { font-size: 38px; }
+
+    .tarjeta h3 {
+      color: var(--azul);
+      margin-bottom: 8px;
+    }
+
+    .marcas {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .promocion {
+      background: var(--azul);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .testimonio {
+      background: var(--claro);
+      border-radius: 10px;
+      padding: 22px;
+    }
+
+    footer {
+      background: #0b1e33;
+      color: white;
+      padding: 40px 0;
+    }
+
+    footer a { color: white; }
+
+    .whatsapp-flotante {
+      position: fixed;
+      bottom: 22px;
+      right: 22px;
+      background: #25d366;
+      color: white;
+      border-radius: 50px;
+      padding: 14px 20px;
+      font-weight: bold;
+      box-shadow: 0 4px 14px #0003;
+      z-index: 10;
+    }
+
+    .whatsapp-flotante:hover { background: #1ebe5d; }
+
+    @media (max-width: 700px) {
+      .rejilla { grid-template-columns: 1fr; }
+      .navegacion { justify-content: center; }
+      nav { justify-content: center; }
+      .hero { padding: 65px 18px; }
+      section { padding: 45px 0; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="contenedor navegacion">
+      <a class="logo" href="#inicio">IMPORTADORA CELESTE</a>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#repuestos">Repuestos</a>
+        <a href="#marcas">Marcas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="contenedor">
+        <p>CALIDAD, VARIEDAD Y CONFIANZA</p>
+        <h1>Cotiza lo que necesites para tu auto</h1>
+        <p>Variedad de repuestos para diferentes marcas de vehículos.</p>
+
+        <a class="boton"
+           href="https://wa.me/573107936237?text=Hola%2C%20quiero%20cotizar%20un%20repuesto."
+           target="_blank" rel="noopener noreferrer">
+          Cotizar por WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <div class="contenedor nosotros" id="nosotros">
+        <h2 class="titulo">Importadora Celeste</h2>
+        <p>
+          Somos una empresa dedicada a la comercialización de
+          autopartes y accesorios para vehículos automotores.
+          Si no tenemos el repuesto que buscas, te ayudamos a encontrarlo.
+        </p>
+        <h3>Experiencia, respaldo y atención especializada</h3>
+      </div>
+    </section>
+
+    <section class="categorias" id="repuestos">
+      <div class="contenedor">
+        <h2 class="titulo">Variedad de repuestos</h2>
+
+        <div class="rejilla">
+          <article class="tarjeta">
+            <div class="icono">🔋</div>
+            <h3>Baterías</h3>
+            <p>Soluciones para el sistema eléctrico de tu vehículo.</p>
+            <a class="boton" href="https://wa.me/573107936237?text=Hola%2C%20quiero%20cotizar%20una%20bater%C3%ADa."
+               target="_blank" rel="noopener noreferrer">Cotizar</a>
+          </article>
+
+          <article class="tarjeta">
+            <div class="icono">🚘</div>
+            <h3>Carrocería</h3>
+            <p>Consulta piezas y accesorios para tu automóvil.</p>
+            <a class="boton" href="https://wa.me/573107936237?text=Hola%2C%20quiero%20cotizar%20un%20repuesto%20de%20carrocer%C3%ADa."
+               target="_blank" rel="noopener noreferrer">Cotizar</a>
+          </article>
+
+          <article class="tarjeta">
+            <div class="icono">⚙️</div>
+            <h3>Dirección</h3>
+            <p>Repuestos para el sistema de dirección.</p>
+            <a class="boton" href="https://wa.me/573107936237?text=Hola%2C%20quiero%20cotizar%20un%20repuesto%20de%20direcci%C3%B3n."
+               target="_blank" rel="noopener noreferrer">Cotizar</a>
+          </article>
+
+          <article class="tarjeta">
+            <div class="icono">🔧</div>
+            <h3>Caja de cambios</h3>
+            <p>Consulta disponibilidad de componentes.</p>
+            <a class="boton" href="https://wa.me/573107936237?text=Hola%2C%20quiero%20cotizar%20un%20repuesto%20para%20la%20caja%20de%20cambios."
+               target="_blank" rel="noopener noreferrer">Cotizar</a>
+          </article>
+
+          <article class="tarjeta">
+            <div class="icono">🛞</div>
+            <h3>Frenos y suspensión</h3>
+            <p>Componentes para el mantenimiento de tu vehículo.</p>
+            <a class="boton" href="https://wa.me/573107936237?text=Hola%2C%20quiero%20cotizar%20repuestos%20de%20frenos%20o%20suspensi%C3%B3n."
+               target="_blank" rel="noopener noreferrer">Cotizar</a>
+          </article>
+
+          <article class="tarjeta">
+            <div class="icono">🧰</div>
+            <h3>Motor y sensores</h3>
+            <p>Encuentra el repuesto adecuado para tu automóvil.</p>
+            <a class="boton" href="https://wa.me/573107936237?text=Hola%2C%20quiero%20cotizar%20un%20repuesto%20de%20motor%20o%20un%20sensor."
+               target="_blank" rel="noopener noreferrer">Cotizar</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="marcas">
+      <div class="contenedor">
+        <h2 class="titulo">Marcas populares</h2>
+        <div class="marcas">
+          <span>Chevrolet</span>
+          <span>Renault</span>
+          <span>Kia</span>
+          <span>Toyota</span>
+          <span>Nissan</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="promocion">
+      <div class="contenedor">
+        <h2>¿Buscas un repuesto?</h2>
+        <p>Escríbenos y recibe asesoría para encontrarlo.</p>
+        <a class="boton"
+           href="https://wa.me/573107936237?text=Hola%2C%20necesito%20asesor%C3%ADa%20para%20encontrar%20un%20repuesto."
+           target="_blank" rel="noopener noreferrer">
+          Hablar con un asesor
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <div class="contenedor">
+        <h2 class="titulo">Nuestros clientes</h2>
+        <div class="rejilla">
+          <article class="testimonio">
+            <h3>Excelente calidad</h3>
+            <p>“Los productos son de muy buena calidad y la atención es excelente”.</p>
+          </article>
+          <article class="testimonio">
+            <h3>Gran variedad</h3>
+            <p>“Una distribuidora con variedad de repuestos”.</p>
+          </article>
+          <article class="testimonio">
+            <h3>Buen servicio</h3>
+            <p>“Buena atención para encontrar el repuesto que necesitas”.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <div class="contenedor">
+      <h2>Importadora Celeste</h2>
+      <p>Dirección: Car 50 35 13, Medellín, Antioquia</p>
+      <p>Correo: importador_aceleste@outlook.com</p>
+      <p>WhatsApp: +57 310 793 6237</p>
+      <p>
+        <a href="https://wa.me/573107936237?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20repuestos."
+           target="_blank" rel="noopener noreferrer">
+          Contáctanos por WhatsApp
+        </a>
+      </p>
+      <p>© 2026 Importadora Celeste. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <a class="whatsapp-flotante"
+     href="https://wa.me/573107936237?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20repuestos."
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Contactar por WhatsApp">
+    WhatsApp
+  </a>
+</body>
+</html>
